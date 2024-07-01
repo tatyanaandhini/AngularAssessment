@@ -1,0 +1,47 @@
+<div>
+        <h1>Employee Detail</h1>
+        <h3>{{employee.firstName}} {{employee.lastName}}  Details</h3>
+        
+        <form [formGroup]="detailForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" formControlName="username" id="username" placeholder="Username" disable>
+            </div>
+            <div class="form-group">
+                <label for="firstName">Nama Depan</label>
+                <input type="text" formControlName="password" id="firstName" placeholder="Nama Depan" disable >
+            </div>
+            <div class="form-group">
+                <label for="lastName">Nama Belakang</label>
+                <input type="text" formControlName="lastName" id="lastName" placeholder="Nama Belakang" disable>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" formControlName="email" id="email" placeholder="email" disable>
+            </div>
+            <div class="form-group">
+                <label for="firstName">Tanggal lahir</label>
+                <input type="text" formControlName="birthDate" id="birthDate" placeholder="birthDate" disable>
+            </div>
+            <div class="form-group">
+                <label for="firstName">Gaji Pokok</label>
+                <input type="text" formControlName="basicSalary" id="basicSalary" placeholder="basicSalary" disable>
+            </div>
+            <div class="form-group">
+                <label for="firstName">Status</label>
+                <input type="text" formControlName="status" id="status" placeholder="status" disable>
+            </div>
+            <div class="form-group">
+                <label for="firstName">Grup</label>
+                <input type="text" formControlName="group" id="group" placeholder="group" disable>
+            </div>
+            <div class="form-group">
+                <label for="firstName">Deskripsi</label>
+                <input type="text" formControlName="description" id="description" placeholder="description" disable>
+            </div>
+        </form>
+
+        <div class="modalButton mb-3">
+            <button (click)="exitModal()">close</button>
+        </div>
+</div>
